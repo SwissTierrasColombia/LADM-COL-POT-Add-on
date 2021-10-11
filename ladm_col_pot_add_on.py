@@ -50,7 +50,7 @@ class LADMCOLPOTAddOn:
 
         # Register new role for POT
         role_key, role_config = RoleConfig.get_role_configuration()
-        self.ladmcol.role_registry.register_role(role_key, role_config)
+        self.ladmcol.role_registry.register_role(role_key, role_config, activate_role=True)
 
     def __unload_ladm_col_plugin(self):
         # Called when the LADM-COL plugin is uninstalled, informing us

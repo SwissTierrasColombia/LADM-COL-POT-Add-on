@@ -19,6 +19,9 @@ class RoleConfig:
         gui_config = GUI_Config().get_gui_dict()
         gui_config[MAIN_MENU][0][WIDGET_NAME] = "PO&T LADM-COL"
 
+        default_gui_config = GUI_Config().get_gui_dict(DEFAULT_GUI)
+        default_gui_config[MAIN_MENU][0][WIDGET_NAME] = "PO&T LADM-COL"
+
         return POT_ROLE_KEY, {
             ROLE_NAME: QCoreApplication.translate("RoleConfig", "POT user"),
             ROLE_DESCRIPTION: QCoreApplication.translate("RoleConfig",
@@ -34,5 +37,5 @@ class RoleConfig:
                 ACTION_ST_LOGOUT,
                 ACTION_CHECK_QUALITY_RULES],
             ROLE_QUALITY_RULES: [],
-            ROLE_GUI_CONFIG: gui_config
+            ROLE_GUI_CONFIG: {TEMPLATE_GUI: gui_config, DEFAULT_GUI: default_gui_config}
         }

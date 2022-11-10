@@ -16,7 +16,7 @@ ACTION_ICON_PATH = os.path.join(IMAGES_DIR, 'reports.svg')
 # LADM-COL plugin
 LADM_COL_PLUGIN_ID = "asistente_ladm_col"
 LADM_COL_PLUGIN_NAME = "Asistente LADM-COL"
-LADM_COL_REQUIRED_VERSION = "3.2.0-dev-addon"
+LADM_COL_REQUIRED_VERSION = "4.0.2-beta-dev"
 
 WARNING_DEPENDENCY_MISSING = "The '{}' plugin requires '{}' version {}. Please install the required version and then reload the add-on.".format(
     ADD_ON_PLUGIN_NAME, LADM_COL_PLUGIN_NAME, LADM_COL_REQUIRED_VERSION)

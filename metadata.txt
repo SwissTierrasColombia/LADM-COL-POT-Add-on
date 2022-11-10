@@ -8,7 +8,7 @@ icon=resources/images/add_on.png
 
 qgisMinimumVersion=3.16
 qgisMaximumVersion=3.99
-plugin_dependencies=Asistente LADM-COL==3.2.0-dev-addon
+plugin_dependencies=Asistente LADM-COL==4.0.2-beta-dev
 author=SwissTierras Colombia
 email=qgis@proadmintierra.info
 
